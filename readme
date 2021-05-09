@@ -1,0 +1,5 @@
+Make sure you have python and pandas library installed on the system.
+Edit the news letter in news-letter.html file and then copy-paste the html code
+add the subscribers email id in the emails.csv file 
+Before executing the code, make sure you that have given the access from your mail provider to less secure apps. 
+Access to less secure apps must be given for this to run. 

@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h2>Subscribe to our newsletter</h2>
+
+<form onsubmit="write()" action="action.php">
+  <label for="lname">Enter Your Email:</label><br>
+  <input type="text" id="email" name="email" value="" placeholder="Email" ><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+<script> 
+function write(){ 
+    const fs = require('fs')  
+    let data = document.getElementById("email");
+    fs.writeFile('email.txt', data, (err) => { 
+        
+ 
+        if (err) throw err; 
+        else
+        {
+            alert("Email Recorded")
+        }
+    }) 
+}
+    </script> 
+    
